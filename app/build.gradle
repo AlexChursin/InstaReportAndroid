@@ -47,6 +47,11 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment:2.2.0-rc02" // For Kotlin use navigation-fragment-ktx
     implementation "androidx.navigation:navigation-ui:2.2.0-rc02"
     implementation "androidx.navigation:navigation-fragment-ktx:2.2.0-rc02"
+    //moxy
+    implementation 'tech.schoolhelper:moxy-x:1.7.0'
+    implementation 'tech.schoolhelper:moxy-x-androidx:1.7.0'
+    implementation 'tech.schoolhelper:moxy-x-material:1.7.0'
+//    kapt 'tech.schoolhelper:moxy-x-compiler:1.7.0'
 
 
 }
