@@ -3,4 +3,17 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Background">#FFFFFF</color>
+    <color name="Gray">#B3B3B3</color>
+
+
+<!--Instagram Gradient Color -->
+    <color name="PrincetonOrange">#F58529</color>
+    <color name="Jasmine">#FEDA77</color>
+    <color name="VividCerise">#DD2A7B</color>
+    <color name="Grape">#8134AF</color>
+    <color name="Iris">#515BD4</color>
+
+
 </resources>

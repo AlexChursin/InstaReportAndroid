@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">InstaReport</string>
+    <string name="instagram_logo_text">Instagram Logo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_web_view_start">WebViewStart</string>
 </resources>
