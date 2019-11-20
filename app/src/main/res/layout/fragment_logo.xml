@@ -5,20 +5,11 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:layout_width="100dp"
-        android:id="@+id/fragment_logo_ic_ist"
-        android:layout_height="100dp"
-        android:contentDescription="@string/instagram_logo_text"
-        android:src="@drawable/ic_instagram"
-        android:textAlignment="center" />
-
-    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_marginStart="10dp"
-        android:layout_toEndOf="@+id/fragment_logo_ic_ist"
-        android:contentDescription="@string/instagram_logo_text"
+
         android:src="@drawable/insta_report_logo" />
 
 </RelativeLayout>

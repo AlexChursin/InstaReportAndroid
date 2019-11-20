@@ -40,7 +40,7 @@ dependencies {
     // implementation 'com.github.angads25:toggle:1.1.0'
 
     //image
-    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
     //  implepentation 'com.github.armcha:ColoredShadowImageView:1.1.0'
 
     implementation 'com.androidadvance:topsnackbar:1.0.0'
@@ -58,5 +58,10 @@ dependencies {
 
     //dark mode
     implementation 'com.github.shrikanth7698:Night-Mode-Button:V1.0'
+
+    //web
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
 
 }

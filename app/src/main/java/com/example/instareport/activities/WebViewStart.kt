@@ -10,6 +10,17 @@ import android.webkit.WebViewClient
 import android.graphics.Bitmap
 import android.widget.Toast
 
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import com.google.gson.JsonObject
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import com.example.instareport.models.InstaAnswer
+import com.example.instareport.models.ResultAnswer
+import java.net.URI
+
 
 class WebViewStart :  AppCompatActivity() {
 
@@ -21,6 +32,7 @@ class WebViewStart :  AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         webView.loadUrl("www.instagram.com/accounts/login")
+
 
         webView.webViewClient = object : WebViewClient() {
             private var running = 0 // Could be public if you want a timer to check.
@@ -43,6 +55,29 @@ class WebViewStart :  AppCompatActivity() {
                 }
             }
         }
+
+        var uri = URI(
+            "http"
+        )
+        var url = uri.toURL()
+
+        ApiUtils.apiGet.registrationPost("","","","").enqueue(object:
+            Callback<InstaAnswer> {
+
+            override fun onResponse(call: Call<InstaAnswer>, response: Response<InstaAnswer>) {
+                val post =  response.body()!!
+                post.data.user.edge_owner_to_timeline_media.page_info.end_cursor
+
+            }
+
+            override fun onFailure(call: Call<InstaAnswer>, t: Throwable) {
+
+            }
+        })
+
+
+
+
     }
 
     private fun showToast(message: String) {

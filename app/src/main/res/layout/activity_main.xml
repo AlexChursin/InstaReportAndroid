@@ -1,33 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
+
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
     android:background="@color/White"
 
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".activities.MainActivity">
 
-    <RelativeLayout
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rect_input"
+            android:hint="Login"
+            android:textSize="16sp"
+            android:paddingStart="15dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/Input" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+
+            android:textSize="16sp"
+            android:background="@drawable/rect_input"
+
+            android:hint="Password"
+            android:paddingStart="15dp" />
+
+        <Button
+            android:id="@+id/reg_main_input"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:textSize="16sp"
+            android:background="@drawable/bt_login"
+            android:shadowColor="@color/Iris"
+            android:textAllCaps="false"
+            android:text="Log In"
+            android:textColor="@color/White" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_lg"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/main_logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="0dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:text="Language: English" />
-
-        <include  layout="@layout/fragment_reg_main"
-            />
-    </RelativeLayout>
+        android:layout_marginTop="15dp"
+        android:text="Language: English" />
 
     <include
         android:id="@+id/main_logo"
@@ -41,14 +84,17 @@
     <com.shrikanthravi.library.NightModeButton
         android:id="@+id/nightModeButton"
 
+        android:visibility="gone"
         android:layout_width="80dp"
         android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
 
 
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="100dp"
+        android:layout_marginTop="400dp"
         android:alpha="0.6" />
 
 
 </RelativeLayout>
+</ScrollView>

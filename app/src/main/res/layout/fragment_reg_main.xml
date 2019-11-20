@@ -4,42 +4,9 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:id="@+id/reg_main_fragment"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Background"
     tools:context=".activities.RegMainFragment">
 
-<LinearLayout
-    android:layout_width="300dp"
-    android:orientation="vertical"
-    android:layout_gravity="center"
-    android:layout_height="wrap_content">
-    <androidx.appcompat.widget.AppCompatEditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:paddingStart="20dp"
-        android:hint="Login"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/bg_input"
 
-        />
-
-    <androidx.appcompat.widget.AppCompatEditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:paddingStart="20dp"
-        android:layout_marginBottom="20dp"
-
-        android:background="@drawable/bg_input"
-        />
-</LinearLayout>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:id="@+id/reg_main_input"
-        android:background="@drawable/gradient_intagram"
-        android:shadowColor="@color/Iris"
-        android:shadowDx="10"
-        android:textColor="@color/White"
-        android:text="Input" />
 </FrameLayout>
