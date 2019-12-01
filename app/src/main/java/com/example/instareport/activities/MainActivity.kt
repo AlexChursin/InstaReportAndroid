@@ -13,6 +13,7 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.arellomobile.mvp.MvpAppCompatActivity
 import com.example.instareport.R
+import com.example.instareport.utils.SessionManager
 
 import com.shrikanthravi.library.NightModeButton
 
@@ -32,7 +33,6 @@ class MainActivity : AppCompatActivity() {
         nightModeButton.setOnSwitchListener { isNight ->
             if (isNight) {
                 //Function to change color
-
 
                 Toast.makeText(applicationContext, "Night Mode On", Toast.LENGTH_SHORT).show()
             } else {
